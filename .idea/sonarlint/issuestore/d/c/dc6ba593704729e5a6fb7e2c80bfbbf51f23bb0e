@@ -1,0 +1,41 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(¹•èŞ8³ËÇâÜ1
+X	java:S125"<This block of commented-out lines of code should be removed.(«§öÉ8Ä¤ÈâÜ1
+X	java:S125"<This block of commented-out lines of code should be removed.(Â–ÿß8ÑõÉâÜ1
+]	java:S125"<This block of commented-out lines of code should be removed.(øûÖµûÿÿÿÿ8íÁÊâÜ1
+X	java:S125 "<This block of commented-out lines of code should be removed.(éÇË÷8æ’ÍâÜ1
+]	java:S125("<This block of commented-out lines of code should be removed.(ßº“ªşÿÿÿÿ8õÄĞâÜ1
+]	java:S125,"<This block of commented-out lines of code should be removed.(ÀÄÑŞûÿÿÿÿ8·„ÒâÜ1
+X	java:S1258"<This block of commented-out lines of code should be removed.(¦é÷ò8şÏÖâÜ1
+N
+java:S1144C"1Remove this unused private "deleteParsel" method.(ÈÔüª8ÁÕÚâÜ1
+N
+java:S1144G"1Remove this unused private "updateParsel" method.(ÓÓğâ8´˜ÚâÜ1
+T
+java:S1144S"2Remove this unused private "getAllParsels" method.(§õÍ¿øÿÿÿÿ8•—áâÜ1
+N
+java:S1144Z"1Remove this unused private "createParsel" method.(•ôĞå8†ĞÖâÜ1
+W
+java:S1144_"5Remove this unused private "deleteParselType" method.(Ü¼úÕşÿÿÿÿ8®ÎâÜ1
+W
+java:S1144c"5Remove this unused private "updateParselType" method.(”¬Ò´ùÿÿÿÿ8ü×ÓâÜ1
+W
+java:S1144r"5Remove this unused private "getAllParselType" method.(ãƒ³ÿÿÿÿÿ8Ã„ÒâÜ1
+R
+java:S1144y"5Remove this unused private "createParselType" method.(ÈµµÅ8Ã„ÒâÜ1
+L
+java:S1144}"/Remove this unused private "deleteMail" method.(ªÆå8ƒÅĞâÜ1
+M
+java:S1144"/Remove this unused private "updateMail" method.(Ï¡ıõ8àöÏâÜ1
+N
+java:S1144"0Remove this unused private "getAllMails" method.(§†ß×8ÚÑâÜ1
+R
+java:S1144—"/Remove this unused private "createMail" method.(¶øåàşÿÿÿÿ8ò’ÍâÜ1
+R
+java:S1144›"/Remove this unused private "updateUser" method.(­Ò‡Øÿÿÿÿÿ8†öÉâÜ1
+R
+java:S1144ª"/Remove this unused private "deleteUser" method.(Ëøïªşÿÿÿÿ8øÁÊâÜ1
+S
+java:S1144®"0Remove this unused private "getALlUsers" method.(×Üà…ûÿÿÿÿ8ÄËâÜ1
+R
+java:S1144¶"/Remove this unused private "createUser" method.(Ñ´‡¢ûÿÿÿÿ8ÅËÇâÜ1
