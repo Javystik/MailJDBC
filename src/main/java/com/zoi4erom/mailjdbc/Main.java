@@ -8,18 +8,19 @@ import com.zoi4erom.mailjdbc.persistence.entity.Mail;
 import com.zoi4erom.mailjdbc.persistence.entity.Parsel;
 import com.zoi4erom.mailjdbc.persistence.entity.ParselType;
 import com.zoi4erom.mailjdbc.persistence.entity.User;
+import com.zoi4erom.mailjdbc.persistence.entity.User.UserBuilder;
 import java.util.List;
 
 public class Main {
-	private static final UserDaoImpl userDao = new UserDaoImpl();
-	private static final MailDaoImpl mailDao = new MailDaoImpl();
-	private static final ParselTypeDaoImpl parselTypeDao = new ParselTypeDaoImpl();
-	private static final ParselDaoImpl parselDao = new ParselDaoImpl();
+	private static final UserDaoImpl userDao = UserDaoImpl.getInstance();
+	private static final MailDaoImpl mailDao = MailDaoImpl.getInstance();
+	private static final ParselTypeDaoImpl parselTypeDao = ParselTypeDaoImpl.getInstance();
+	private static final ParselDaoImpl parselDao = ParselDaoImpl.getInstance();
 	public static void main(String[] args){
 //
 //		createUser();
 //
-		//getALlUsers();
+//		getALlUsers();
 
 //		getUserById(9);
 
@@ -88,7 +89,13 @@ public class Main {
 	}
 
 	private static void createParsel() {
-		Parsel parsel = new Parsel(1, "Лист другу", 1, 1, 2);
+		Parsel parsel = Parsel.builder()
+		    .mailId(1)
+		    .name("Лист другу")
+		    .parselTypeId(1)
+		    .senderUserId(1)
+		    .recipientUserId(2)
+		    .build();
 		parselDao.create(parsel);
 	}
 
@@ -119,7 +126,11 @@ public class Main {
 	}
 
 	private static void createParselType() {
-		parselTypeDao.create(new ParselType("Листи", "Листочки всякі"));
+		ParselType parselType = ParselType.builder()
+		    .name("Листи")
+		    .description("Листочки всякі")
+		    .build();
+		parselTypeDao.create(parselType);
 	}
 
 	private static void deleteMail(Integer id) {
@@ -149,7 +160,12 @@ public class Main {
 	}
 
 	private static void createMail() {
-		mailDao.create(new Mail("Розетка", "Ромашкова 15", "+23123134124"));
+		Mail mail = Mail.builder()
+		    .mailName("Розетка")
+		    .address("Ромашкова 15")
+		    .phoneNumber("+23123134124")
+		    .build();
+		mailDao.create(mail);
 	}
 
 	private static void updateUser(Integer id){
@@ -180,7 +196,11 @@ public class Main {
 	}
 
 	private static void createUser() {
-		User user = new User("Міроха", "12345", "Ромашково 12");
+		User user = User.builder()
+		    .fullname("Міроха")
+		    .password("12345")
+		    .homeAdress("Ромашково 12")
+		    .build();
 		userDao.create(user);
 	}
 }

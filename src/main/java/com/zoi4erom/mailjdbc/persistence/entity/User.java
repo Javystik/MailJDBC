@@ -1,24 +1,16 @@
 package com.zoi4erom.mailjdbc.persistence.entity;
-
-public class User {
+public class User implements Entity{
 	private int id;
 	private String fullname;
 	private String password;
 	private String homeAdress;
 
-	public User(int id, String fullname, String password, String homeAdress) {
-		this.id = id;
-		this.fullname = fullname;
-		this.password = password;
-		this.homeAdress = homeAdress;
+	public User(UserBuilder userBuilder) {
+		this.id = userBuilder.id;
+		this.fullname = userBuilder.fullname;
+		this.password = userBuilder.password;
+		this.homeAdress = userBuilder.homeAdress;
 	}
-
-	public User(String fullname, String password, String homeAdress) {
-		this.fullname = fullname;
-		this.password = password;
-		this.homeAdress = homeAdress;
-	}
-
 	public int getId() {
 		return id;
 	}
@@ -59,5 +51,35 @@ public class User {
 		    ", password='" + password + '\'' +
 		    ", homeAdress='" + homeAdress + '\'' +
 		    '}';
+	}
+	public static UserBuilder builder() {
+		return new UserBuilder();
+	}
+
+	public static class UserBuilder {
+		private int id;
+		private String fullname;
+		private String password;
+		private String homeAdress;
+
+		public UserBuilder id(int id){
+			this.id = id;
+			return this;
+		}
+		public UserBuilder fullname(String fullname){
+			this.fullname = fullname;
+			return this;
+		}
+		public UserBuilder password(String password){
+			this.password = password;
+			return this;
+		}
+		public UserBuilder homeAdress(String homeAdress){
+			this.homeAdress = homeAdress;
+			return this;
+		}
+		public User build(){
+			return new User(this);
+		}
 	}
 }

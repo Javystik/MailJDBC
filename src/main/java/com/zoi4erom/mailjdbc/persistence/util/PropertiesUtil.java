@@ -1,5 +1,6 @@
 package com.zoi4erom.mailjdbc.persistence.util;
 
+import com.zoi4erom.mailjdbc.persistence.exception.PropertiesLoadException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -20,7 +21,7 @@ public final class PropertiesUtil {
 		    .getResourceAsStream("application.properties")) {
 			PROPERTIES.load(inputStream);
 		} catch (IOException e) {
-			throw new RuntimeException(e);
+			throw new PropertiesLoadException("Помилка загрузки properties: " + e);
 		}
 	}
 }

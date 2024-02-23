@@ -1,6 +1,6 @@
 package com.zoi4erom.mailjdbc.persistence.entity;
 
-public class Parsel {
+public class Parsel implements Entity{
 	private int id;
 	private int mailId;
 	private String name;
@@ -8,23 +8,13 @@ public class Parsel {
 	private int senderUserId;
 	private int recipientUserId;
 
-	public Parsel(int id, int mailId, String name, int parselTypeId, int senderUserId,
-	    int recipientUserId) {
-		this.id = id;
-		this.mailId = mailId;
-		this.name = name;
-		this.parselTypeId = parselTypeId;
-		this.senderUserId = senderUserId;
-		this.recipientUserId = recipientUserId;
-	}
-
-	public Parsel(int mailId, String name, int parselTypeId, int senderUserId,
-	    int recipientUserId) {
-		this.mailId = mailId;
-		this.name = name;
-		this.parselTypeId = parselTypeId;
-		this.senderUserId = senderUserId;
-		this.recipientUserId = recipientUserId;
+	public Parsel(ParselBuilder parselBuilder) {
+		this.id = parselBuilder.id;
+		this.mailId = parselBuilder.mailId;
+		this.name = parselBuilder.name;
+		this.parselTypeId = parselBuilder.parselTypeId;
+		this.senderUserId = parselBuilder.senderUserId;
+		this.recipientUserId = parselBuilder.recipientUserId;
 	}
 
 	public int getId() {
@@ -85,5 +75,45 @@ public class Parsel {
 		    ", senderUserId=" + senderUserId +
 		    ", recipientUserId=" + recipientUserId +
 		    '}';
+	}
+	public static ParselBuilder builder(){
+		return new ParselBuilder();
+	}
+
+	public static class ParselBuilder {
+		private int id;
+		private int mailId;
+		private String name;
+		private int parselTypeId;
+		private int senderUserId;
+		private int recipientUserId;
+
+		public ParselBuilder id(int id){
+			this.id = id;
+			return this;
+		}
+		public ParselBuilder mailId(int mailId){
+			this.mailId = mailId;
+			return this;
+		}
+		public ParselBuilder name(String name){
+			this.name = name;
+			return this;
+		}
+		public ParselBuilder parselTypeId(int parselTypeId){
+			this.parselTypeId = parselTypeId;
+			return this;
+		}
+		public ParselBuilder senderUserId(int senderUserId){
+			this.senderUserId = senderUserId;
+			return this;
+		}
+		public ParselBuilder recipientUserId(int recipientUserId){
+			this.recipientUserId = recipientUserId;
+			return this;
+		}
+		public Parsel build(){
+			return new Parsel(this);
+		}
 	}
 }

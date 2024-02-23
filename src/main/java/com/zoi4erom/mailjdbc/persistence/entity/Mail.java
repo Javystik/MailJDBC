@@ -1,24 +1,17 @@
 package com.zoi4erom.mailjdbc.persistence.entity;
 
-public class Mail {
+public class Mail implements Entity{
 	private int id;
 	private String mailName;
 	private String address;
 	private String phoneNumber;
 
-	public Mail(int id, String mailName, String address, String phoneNumber) {
-		this.id = id;
-		this.mailName = mailName;
-		this.address = address;
-		this.phoneNumber = phoneNumber;
+	public Mail(MailBuilder mailBuilder) {
+		this.id = mailBuilder.id;
+		this.mailName = mailBuilder.mailName;
+		this.address = mailBuilder.address;
+		this.phoneNumber = mailBuilder.phoneNumber;
 	}
-
-	public Mail(String mailName, String address, String phoneNumber) {
-		this.mailName = mailName;
-		this.address = address;
-		this.phoneNumber = phoneNumber;
-	}
-
 	public int getId() {
 		return id;
 	}
@@ -59,5 +52,36 @@ public class Mail {
 		    ", address='" + address + '\'' +
 		    ", phoneNumber='" + phoneNumber + '\'' +
 		    '}';
+	}
+
+	public static MailBuilder builder(){
+		return new MailBuilder();
+	}
+
+	public static class MailBuilder {
+		private int id;
+		private String mailName;
+		private String address;
+		private String phoneNumber;
+
+		public MailBuilder id(int id){
+			this.id = id;
+			return this;
+		}
+		public MailBuilder mailName(String mailName){
+			this.mailName = mailName;
+			return this;
+		}
+		public MailBuilder address(String address){
+			this.address = address;
+			return this;
+		}
+		public MailBuilder phoneNumber(String phoneNumber){
+			this.phoneNumber = phoneNumber;
+			return this;
+		}
+		public Mail build(){
+			return new Mail(this);
+		}
 	}
 }

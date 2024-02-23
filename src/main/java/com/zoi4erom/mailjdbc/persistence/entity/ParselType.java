@@ -1,19 +1,14 @@
 package com.zoi4erom.mailjdbc.persistence.entity;
 
-public class ParselType {
+public class ParselType implements Entity{
 	private int id;
 	private String name;
 	private String description;
 
-	public ParselType(int id, String name, String description) {
-		this.id = id;
-		this.name = name;
-		this.description = description;
-	}
-
-	public ParselType(String name, String description) {
-		this.name = name;
-		this.description = description;
+	public ParselType(ParselTypeBuilder parselTypeBuilder) {
+		this.id = parselTypeBuilder.id;
+		this.name = parselTypeBuilder.name;
+		this.description = parselTypeBuilder.description;
 	}
 
 	public int getId() {
@@ -47,5 +42,30 @@ public class ParselType {
 		    ", name='" + name + '\'' +
 		    ", description='" + description + '\'' +
 		    '}';
+	}
+	public static ParselTypeBuilder builder(){
+		return new ParselTypeBuilder();
+	}
+
+	public static class ParselTypeBuilder {
+		private int id;
+		private String name;
+		private String description;
+
+		public ParselTypeBuilder id(int id){
+			this.id = id;
+			return this;
+		}
+		public ParselTypeBuilder name(String name){
+			this.name = name;
+			return this;
+		}
+		public ParselTypeBuilder description(String description){
+			this.description = description;
+			return this;
+		}
+		public ParselType build(){
+			return new ParselType(this);
+		}
 	}
 }
