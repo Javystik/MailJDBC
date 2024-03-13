@@ -1,6 +1,8 @@
 package com.zoi4erom.mailjdbc.persistence.entity;
 
-public class ParselType implements Entity{
+import java.util.ArrayList;
+
+public class ParselType extends Entity{
 	private int id;
 	private String name;
 	private String description;
@@ -9,6 +11,7 @@ public class ParselType implements Entity{
 		this.id = parselTypeBuilder.id;
 		this.name = parselTypeBuilder.name;
 		this.description = parselTypeBuilder.description;
+		this.validationMessages = new ArrayList<>();
 	}
 
 	public int getId() {

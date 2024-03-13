@@ -8,7 +8,6 @@ import com.zoi4erom.mailjdbc.persistence.entity.Mail;
 import com.zoi4erom.mailjdbc.persistence.entity.Parsel;
 import com.zoi4erom.mailjdbc.persistence.entity.ParselType;
 import com.zoi4erom.mailjdbc.persistence.entity.User;
-import com.zoi4erom.mailjdbc.persistence.entity.User.UserBuilder;
 import java.util.List;
 
 public class Main {
@@ -18,9 +17,9 @@ public class Main {
 	private static final ParselDaoImpl parselDao = ParselDaoImpl.getInstance();
 	public static void main(String[] args){
 //
-//		createUser();
+		createUser();
 //
-//		getALlUsers();
+		getALlUsers();
 
 //		getUserById(9);
 
@@ -172,7 +171,7 @@ public class Main {
 		User user = getUserById(id);
 		System.out.println(user);
 
-		user.setFullname("Новий тест юзер");
+		user.setFullName("Новий тест юзер");
 
 		User updateUser = userDao.update(user);
 		System.out.println(updateUser);
@@ -197,9 +196,9 @@ public class Main {
 
 	private static void createUser() {
 		User user = User.builder()
-		    .fullname("Міроха")
+		    .fullName("ААААА")
 		    .password("12345")
-		    .homeAdress("Ромашково 12")
+		    .homeAddress("Ромашково 12")
 		    .build();
 		userDao.create(user);
 	}

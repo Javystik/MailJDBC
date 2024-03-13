@@ -1,6 +1,8 @@
 package com.zoi4erom.mailjdbc.persistence.entity;
 
-public class Mail implements Entity{
+import java.util.ArrayList;
+
+public class Mail extends Entity{
 	private int id;
 	private String mailName;
 	private String address;
@@ -11,6 +13,7 @@ public class Mail implements Entity{
 		this.mailName = mailBuilder.mailName;
 		this.address = mailBuilder.address;
 		this.phoneNumber = mailBuilder.phoneNumber;
+		this.validationMessages = new ArrayList<>();
 	}
 	public int getId() {
 		return id;

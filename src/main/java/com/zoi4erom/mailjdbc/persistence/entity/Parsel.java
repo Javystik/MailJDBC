@@ -1,13 +1,14 @@
 package com.zoi4erom.mailjdbc.persistence.entity;
 
-public class Parsel implements Entity{
+import java.util.ArrayList;
+
+public class Parsel extends Entity{
 	private int id;
 	private int mailId;
 	private String name;
 	private int parselTypeId;
 	private int senderUserId;
 	private int recipientUserId;
-
 	public Parsel(ParselBuilder parselBuilder) {
 		this.id = parselBuilder.id;
 		this.mailId = parselBuilder.mailId;
@@ -15,6 +16,7 @@ public class Parsel implements Entity{
 		this.parselTypeId = parselBuilder.parselTypeId;
 		this.senderUserId = parselBuilder.senderUserId;
 		this.recipientUserId = parselBuilder.recipientUserId;
+		this.validationMessages = new ArrayList<>();
 	}
 
 	public int getId() {
@@ -64,6 +66,7 @@ public class Parsel implements Entity{
 	public void setRecipientUserId(int recipientUserId) {
 		this.recipientUserId = recipientUserId;
 	}
+
 
 	@Override
 	public String toString() {

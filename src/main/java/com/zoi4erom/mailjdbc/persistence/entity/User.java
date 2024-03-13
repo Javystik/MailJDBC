@@ -1,15 +1,19 @@
 package com.zoi4erom.mailjdbc.persistence.entity;
-public class User implements Entity{
+
+import java.util.ArrayList;
+
+public class User extends Entity{
 	private int id;
-	private String fullname;
+	private String fullName;
 	private String password;
-	private String homeAdress;
+	private String homeAddress;
 
 	public User(UserBuilder userBuilder) {
 		this.id = userBuilder.id;
-		this.fullname = userBuilder.fullname;
+		this.fullName = userBuilder.fullName;
 		this.password = userBuilder.password;
-		this.homeAdress = userBuilder.homeAdress;
+		this.homeAddress = userBuilder.homeAddress;
+		this.validationMessages = new ArrayList<>();
 	}
 	public int getId() {
 		return id;
@@ -19,12 +23,12 @@ public class User implements Entity{
 		this.id = id;
 	}
 
-	public String getFullname() {
-		return fullname;
+	public String getFullName() {
+		return fullName;
 	}
 
-	public void setFullname(String fullname) {
-		this.fullname = fullname;
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
 
 	public String getPassword() {
@@ -35,21 +39,21 @@ public class User implements Entity{
 		this.password = password;
 	}
 
-	public String getHomeAdress() {
-		return homeAdress;
+	public String getHomeAddress() {
+		return homeAddress;
 	}
 
-	public void setHomeAdress(String homeAdress) {
-		this.homeAdress = homeAdress;
+	public void setHomeAddress(String homeAddress) {
+		this.homeAddress = homeAddress;
 	}
 
 	@Override
 	public String toString() {
 		return "User{" +
 		    "id=" + id +
-		    ", fullname='" + fullname + '\'' +
+		    ", fullName='" + fullName + '\'' +
 		    ", password='" + password + '\'' +
-		    ", homeAdress='" + homeAdress + '\'' +
+		    ", homeAddress='" + homeAddress + '\'' +
 		    '}';
 	}
 	public static UserBuilder builder() {
@@ -58,24 +62,24 @@ public class User implements Entity{
 
 	public static class UserBuilder {
 		private int id;
-		private String fullname;
+		private String fullName;
 		private String password;
-		private String homeAdress;
+		private String homeAddress;
 
 		public UserBuilder id(int id){
 			this.id = id;
 			return this;
 		}
-		public UserBuilder fullname(String fullname){
-			this.fullname = fullname;
+		public UserBuilder fullName(String fullName){
+			this.fullName = fullName;
 			return this;
 		}
 		public UserBuilder password(String password){
 			this.password = password;
 			return this;
 		}
-		public UserBuilder homeAdress(String homeAdress){
-			this.homeAdress = homeAdress;
+		public UserBuilder homeAddress(String homeAddress){
+			this.homeAddress = homeAddress;
 			return this;
 		}
 		public User build(){

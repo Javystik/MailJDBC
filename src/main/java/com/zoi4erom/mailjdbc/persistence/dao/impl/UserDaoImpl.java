@@ -39,9 +39,9 @@ public class UserDaoImpl implements UserDao {
 	public boolean create(User user) {
 		try (var connection = ConnectionManager.getConnection();
 		    var preparedStatement = connection.prepareStatement(createUserSql)) {
-			preparedStatement.setString(1, user.getFullname());
+			preparedStatement.setString(1, user.getFullName());
 			preparedStatement.setString(2, user.getPassword());
-			preparedStatement.setString(3, user.getHomeAdress());
+			preparedStatement.setString(3, user.getHomeAddress());
 
 			preparedStatement.executeUpdate();
 			return true;
@@ -66,9 +66,9 @@ public class UserDaoImpl implements UserDao {
 
 				User user = User.builder()
 				    .id(userId)
-				    .fullname(fullname)
+				    .fullName(fullname)
 				    .password(password)
-				    .homeAdress(homeAddress)
+				    .homeAddress(homeAddress)
 				    .build();
 
 				users.add(user);
@@ -95,9 +95,9 @@ public class UserDaoImpl implements UserDao {
 
 				user = User.builder()
 				    .id(userId)
-				    .fullname(fullname)
+				    .fullName(fullname)
 				    .password(password)
-				    .homeAdress(homeAddress)
+				    .homeAddress(homeAddress)
 				    .build();
 			}
 			return user;
@@ -110,9 +110,9 @@ public class UserDaoImpl implements UserDao {
 	public User update(User user) {
 		try (var connection = ConnectionManager.getConnection();
 		    var preparedStatement = connection.prepareStatement(updateSql)) {
-			preparedStatement.setString(1, user.getFullname());
+			preparedStatement.setString(1, user.getFullName());
 			preparedStatement.setString(2, user.getPassword());
-			preparedStatement.setString(3, user.getHomeAdress());
+			preparedStatement.setString(3, user.getHomeAddress());
 			preparedStatement.setInt(4, user.getId());
 
 			preparedStatement.executeUpdate();
