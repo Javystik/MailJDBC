@@ -7,7 +7,6 @@ public class User extends Entity{
 	private String fullName;
 	private String password;
 	private String homeAddress;
-
 	public User(UserBuilder userBuilder) {
 		this.id = userBuilder.id;
 		this.fullName = userBuilder.fullName;

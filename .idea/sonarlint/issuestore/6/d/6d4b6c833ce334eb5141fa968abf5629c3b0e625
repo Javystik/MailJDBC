@@ -1,8 +1,11 @@
 
-V	java:S125"<This block of commented-out lines of code should be removed.(ç¤·¾øÿÿÿÿ
-W
-java:S1144."<Remove this unused private "parsetlTypeValidateTest" method.(ÖÄ’ùÿÿÿÿ
-J
-java:S1144>"5Remove this unused private "mailValidateTest" method.(ž¿åv
-J
-java:S1144Q"5Remove this unused private "userValidateTest" method.(Ì¥Ë
+|	java:S125"<This block of commented-out lines of code should be removed.(ç¤·¾øÿÿÿÿJ$48235b10-9c39-4eeb-9095-e9d1de0149d9
+r	java:S106g"+Replace this use of System.out by a logger.(¼øìåýÿÿÿÿ8–¡—åã1J$ac778f2e-2907-4255-8927-e04eb5f84724
+m	java:S106i"+Replace this use of System.out by a logger.(©„Ò8›¡—åã1J$0c607877-148d-402e-930d-9328d3894247
+m	java:S106l"+Replace this use of System.out by a logger.(õÏíØ8Ÿ¡—åã1J$a2b3ad71-9dc9-4986-8c8c-bf2847c57c53
+}
+java:S1144."<Remove this unused private "parsetlTypeValidateTest" method.(ÖÄ’ùÿÿÿÿJ$fad25e7e-a7e3-401d-9719-f946eccdebcb
+p
+java:S1144>"5Remove this unused private "mailValidateTest" method.(ž¿åvJ$a5cdebca-9cd8-4a2c-8be0-b06ab71a7e43
+p
+java:S1144Q"5Remove this unused private "userValidateTest" method.(Ì¥ËJ$95674e7f-b0e0-4084-9b82-3f08ce34ce64

@@ -1,8 +1,28 @@
 
-v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(œíÄÌ8»‡å³İ1
-v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(èŸÀ8Ùè³İ1
-{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÇáÃüÿÿÿÿ8÷„é³İ1
-{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(û™Ü•şÿÿÿÿ8ÏÜé³İ1
-{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(—ì¥ÿÿÿÿÿ8½ë³İ1
-¶
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ªÙ«ã8™Ñã´İ1
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(œíÄÌ8»‡å³İ1J$d070f1a3-7334-4732-8184-88531365df3c
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(èŸÀ8Ùè³İ1J$e403919b-83ca-4dcc-b8f7-cc19130d4692
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÇáÃüÿÿÿÿ8÷„é³İ1J$96c2a509-b9d4-41be-8321-f9b32e8f70d2
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(û™Ü•şÿÿÿÿ8ÏÜé³İ1J$7e5b831e-3381-485a-a495-15a79ae77b0f
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(—ì¥ÿÿÿÿÿ8½ë³İ1J$54b6f402-92a3-4abd-bd41-159f7cd72f49
+}
+java:S2479":Remove the non-escaped \u0009 character from this literal.(œíÄÌ8Â–æã1J$6256fd1f-8635-49c5-b329-a49fb83abd1d
+o
+java:S5664",Use only spaces or only tabs for indentation(œíÄÌ8Ä–æã1J$d4c6cef8-fdfe-4ed5-86a9-0a8b3007a013
+}
+java:S2479":Remove the non-escaped \u0009 character from this literal.(èŸÀ8Æ–æã1J$9014a41a-52c3-45d5-ad24-fa1959b1eeab
+o
+java:S5664",Use only spaces or only tabs for indentation(èŸÀ8Æ–æã1J$dfb73b55-5ab2-4415-87bf-867bffa126b9
+‚
+java:S2479":Remove the non-escaped \u0009 character from this literal.(ÇáÃüÿÿÿÿ8Ç–æã1J$77ef5f3a-77f6-4bdf-9f85-0ae8c9c6f3ee
+t
+java:S5664",Use only spaces or only tabs for indentation(ÇáÃüÿÿÿÿ8Ç–æã1J$340b41b2-6adf-4ec9-85ef-efef3091a820
+‚
+java:S2479":Remove the non-escaped \u0009 character from this literal.(û™Ü•şÿÿÿÿ8È–æã1J$fe0d4afd-bc45-4f02-878d-be2846a87b68
+t
+java:S5664",Use only spaces or only tabs for indentation(û™Ü•şÿÿÿÿ8È–æã1J$de941e4a-ffb8-4a19-bd46-9d432079eca6
+‚
+java:S2479":Remove the non-escaped \u0009 character from this literal.(—ì¥ÿÿÿÿÿ8È–æã1J$e7798a6f-14ac-4d36-9be5-697126eff8e1
+t
+java:S5664",Use only spaces or only tabs for indentation(—ì¥ÿÿÿÿÿ8É–æã1J$a6fe893a-cc0e-4eb2-bd5e-b980fa7b8860
+Ü
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ªÙ«ã8™Ñã´İ1J$f14b70b8-5bbd-4216-857e-420765f7efc1

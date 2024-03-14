@@ -4,5 +4,25 @@ v	java:S115"ZRename this constant name to match the regular expression '^[A-Z
 v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ëÜÈ8ô„’´İ1
 {	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ö–Üÿÿÿÿÿ8æÑ’´İ1
 {	java:S115 "ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(²°ÜÌÿÿÿÿÿ8æ¯“´İ1
+\
+java:S2479":Remove the non-escaped \u0009 character from this literal.(û¡Îªüÿÿÿÿ8Õ¡Òæã1
+N
+java:S5664",Use only spaces or only tabs for indentation(û¡Îªüÿÿÿÿ8Õ¡Òæã1
+W
+java:S2479":Remove the non-escaped \u0009 character from this literal.(¤Ò¾æ8Ö¡Òæã1
+I
+java:S5664",Use only spaces or only tabs for indentation(¤Ò¾æ8Ö¡Òæã1
+W
+java:S2479":Remove the non-escaped \u0009 character from this literal.(ëÜÈ8×¡Òæã1
+I
+java:S5664",Use only spaces or only tabs for indentation(ëÜÈ8×¡Òæã1
+\
+java:S2479":Remove the non-escaped \u0009 character from this literal.(ö–Üÿÿÿÿÿ8Ø¡Òæã1
+N
+java:S5664",Use only spaces or only tabs for indentation(ö–Üÿÿÿÿÿ8Ø¡Òæã1
+\
+java:S2479 ":Remove the non-escaped \u0009 character from this literal.(²°ÜÌÿÿÿÿÿ8Ù¡Òæã1
+N
+java:S5664 ",Use only spaces or only tabs for indentation(²°ÜÌÿÿÿÿÿ8Ù¡Òæã1
 »
 java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(…¶Ã¢üÿÿÿÿ8‡¯×´İ1
